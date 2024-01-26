@@ -1,2 +1,4 @@
+import cowsay
+
 if __name__ == "__main__":
-    print("Hello there! my name is david!")
+    cowsay.cow("Hello there! my name is david!")
