@@ -11,6 +11,9 @@ jobs:
             - name: list current files
               run: |
                 ls
+            - name: install dependencies
+              run: |
+                pipenv install
             - name: run the script
               run: |
                 python test.py
