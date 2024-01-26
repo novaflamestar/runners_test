@@ -13,6 +13,7 @@ jobs:
                 ls
             - name: install dependencies
               run: |
+                pip install pipenv
                 pipenv install
             - name: run the script
               run: |
