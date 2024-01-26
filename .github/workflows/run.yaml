@@ -12,9 +12,7 @@ jobs:
               run: |
                 ls
             - name: Set up Python
-              uses: actions/setup-python@v4
-              with:
-                python-version: 3.11
+              uses: docker://python:latest
             - name: run the script
               run: |
                 python test.py
