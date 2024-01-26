@@ -6,8 +6,8 @@ jobs:
     run:
         runs-on: self-hosted
         steps:
+            - name: pull own repo
+              uses: actions/checkout@v4
             - name: test
               run: |
-                echo test
-
-
+                ls
