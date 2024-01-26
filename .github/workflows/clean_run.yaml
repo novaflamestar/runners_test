@@ -13,9 +13,11 @@ jobs:
               with:
                 python-version: 3.11
             - name: list current files
+              working-directory: ./standalone
               run: |
                 ls
             - name: run the script
+              working-directory: ./standalone
               run: |
-                python ./standalone/test.py
+                python test.py
 

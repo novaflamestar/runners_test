@@ -1,4 +1,4 @@
-name: Run the script
+name: Run the script with dependencies
 
 on:
     workflow_dispatch:
@@ -16,10 +16,12 @@ jobs:
               run: |
                 ls
             - name: install dependencies
+              working-directory: ./dependency
               run: |
                 pip install pipenv
                 pipenv install
             - name: run the script
+              working-directory: ./dependency
               run: |
                 pipenv run python test.py
 
