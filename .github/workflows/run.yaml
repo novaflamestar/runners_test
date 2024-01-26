@@ -8,6 +8,10 @@ jobs:
         steps:
             - name: pull own repo
               uses: actions/checkout@v4
+            - name: Set up Python 3.11
+              uses: actions/setup-python@v1
+              with:
+                python-version: 3.11
             - name: list current files
               run: |
                 ls
