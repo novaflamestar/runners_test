@@ -11,6 +11,10 @@ jobs:
             - name: list current files
               run: |
                 ls
+            - name: Set up Python
+              uses: actions/setup-python@v4
+              with:
+                python-version: 3.9
             - name: run the script
               run: |
                 python test.py
