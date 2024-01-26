@@ -13,6 +13,7 @@ jobs:
               with:
                 python-version: 3.11
             - name: list current files
+              working-directory: ./dependency
               run: |
                 ls
             - name: install dependencies
