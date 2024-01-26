@@ -11,8 +11,6 @@ jobs:
             - name: list current files
               run: |
                 ls
-            - name: Set up Python
-              uses: docker://python:latest
             - name: run the script
               run: |
                 python test.py
