@@ -4,7 +4,7 @@ on:
     workflow_dispatch:
 jobs:
     run:
-        runs-on: self-hosted
+        runs-on: ubuntu-latest
         steps:
             - name: pull own repo
               uses: actions/checkout@v4
